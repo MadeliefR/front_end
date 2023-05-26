@@ -21,6 +21,9 @@ body {
 }
 /* end of rule */
 
+p{
+  text-align:justify ;
+}
 
 /* Link Styles */
 
@@ -134,9 +137,12 @@ footer {
 }
 
 footer .copyright {
+  color:gray;
   top: -8px;
   margin-right: 20px;
   font-size: .75em;
+  text-align: center;
+  font-style: italic;
 }
 
 footer ul {
@@ -173,6 +179,11 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+}
+
+ol.list {
+  font-style: italic;
+  padding: 5px 70px;
 }
 
 /* Styles for larger screens */
