@@ -26,26 +26,26 @@
        alt = description of your image. visiotrs sees this when the image is broken and search engine and screen readers also use this text-->
 
       <img src="images/me.png" alt="Drawing of Jane Smith" class="profile-image"> <!-- <img is a self closing tags (aka empty element), so does not need to be closed --> 
-      <h1 class="tag name">Hello, I'm Madelief</h1>
-      <p class="tag location">This is my first webpage</p>
+      <h1 class="tag name">Hello, nice to meet you!</h1>
+      <p class="tag location">My name is Madelief Riphagen, and welcome to my first webpage</p>
     </header>
 
     <main class="flex">
       <div class="card">
         <h2>Background</h2>
-        <p>I'm an aspiring <b>web designer</b> who loves everything about the web. I've lived in lots of different places and have worked in lots of different jobs. I'm excited to bring my life experience to the process of building fantastic looking websites.</p>
-        <p>I've been a professional cook and gardener and am a life-long learner who's always interested in expanding my skills.</p>
-        
+        <p>I am a motivated individual with a passion for continuous learning and personal growth. I hold a Bachelor's degree in Business Administration, complemented by additional coursework in management, economics, and law. Furthermore, I am currently employed at Cyso and actively pursuing a traineeship in Development, where I can combine my passion for learning with my interest in technology. I thrive in dynamic environments, constantly seeking opportunities to enhance my skills and contribute meaningfully to projects.
+        </p>
+        <p>Beyond my professional pursuits, I have a deep love for cats, which has led me to dedicate my summers as a volunteer at a local cat shelter for three years. This experience has reinforced my compassion, empathy, and commitment to making a positive impact in the community. In addition, with a background in dance at a professional level, I have cultivated discipline, perseverance, and the ability to work collaboratively as part of a team.</p>
         <!-- creating a clickable link by using the anchor tag (<a>) and hypertext reference tag 
           <a> = makes everyting within the tag look like a clickable link
           href= were we want the browser to go when the link is clicked 
         -->
-        <p><a href="#top" class="card-link">Creation of a clickable link</a></p>  <!-- this link wil lead you to the top of the page --> 
+        <p>To learn more, <a class="card-link" href="/Resume/resume.html">view my resume</a></p>  <!-- this link wil lead you to the top of the page --> 
       </div> 
 
       <div class="card">
         <h2>Goals</h2>
-        <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+        <p class="goals">My goal is to become a proficient developer, mastering the process of building applications while expanding my knowledge and skills in:</p>
         
         <!-- creating a list horizontal 
         ul = unordered list
@@ -58,12 +58,15 @@
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
-        <p>I'd like to work for a web design firm helping clients create an impressive online presence.</p>
-        <ol>
-          <li>Creating an orderd list</li>
-          <li>Creating the numbers  by itself</li>
-          <li>To learn more, <a class="card-link" href="resume.html">view my resume</a></li>
+        <p class="goals">In addition to increase my technical skills, I am currently pursuing a Master of Science degree in Business Administration with a specialization in Digital Business at the University of Amsterdam. My objective is to graduate by June 23, 2023.
+          The following courses have been particularly influential and enjoyable for me
+        </p>
+        <ol class="list">
+          <li>Data Science</li>
+          <li>Operational Excellence</li>
+          <li>Leadership and Management</li>
         </ol>
+        <p> By combining technical expertise with business acumen, I aspire to make meaningful contributions in the realm of digital innovation and create impactful solutions for the future</p>
       </div> 
 
     </main>
@@ -74,7 +77,10 @@
         <li><a href="https://www.linkedin.com/in/madelief-riphagen-042b8112a/" target="_black" class="social linkedin">LinkedIn</a></li>
         <li><a href="https://github.com/MadeliefR" target="_black" class="social github">Github</a></li>
       </ul>
-      <p class="copyright">Copyright 2023, Madelief</p>
+      <p class="copyright">&copy; <span id="currentYear"></span> Madelief Riphagen</p>  <!-- met javascript dynamisch maken-->
     </footer>
   </body>
+  <script>var currentYear = new Date().getFullYear();
+  document.getElementById("currentYear").textContent = currentYear;
+  </script>
 </html>
