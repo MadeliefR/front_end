@@ -16,3 +16,10 @@ H1{
 .section-title{
     text-transform: uppercase;
 }
+
+/* ID selector is used when you want one part to style. kind of like creating a class, but can only be used once in the html file*/
+
+#Employment {
+    border: 3px solid red;
+    border-radius: 8px;
+}
