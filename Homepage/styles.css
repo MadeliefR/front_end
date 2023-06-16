@@ -21,7 +21,7 @@ body {
 }
 /* end of rule */
 
-p{
+p {
   text-align:justify ;
 }
 
@@ -43,7 +43,6 @@ a:hover {
   min-height: 30px;
   padding: 10px;
   position: fixed;
-  text-align: center;
 }
 .nav {
   display: flex;
@@ -67,15 +66,16 @@ a:hover {
 }
 
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: url('images/daisy_flower.png') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
-header {
   line-height: 1.5;
 }
+
 .profile-image {
   margin-top: 50px;   /* margin changes the space outside the element box */
   width: 150px;
@@ -95,23 +95,11 @@ header .profile-image:hover {
   padding: 15px;
   border-radius: 16px;
   display: table;
-  margin: 10px auto;
+  margin: 10px 0;
 } 
 .location {
   background-color: #222;
   color: pink;
-}
-.card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 15px;
-}
-.card:hover {
-  border-color: pink;
 }
 
 ul.skills {
@@ -121,7 +109,7 @@ ul.skills {
 
 .skills li {
   border-radius: 6px;
-  display: inline-block;
+  display: inline-block;  /* inline-block zorgt ervoor dat de lijst side-by-side staat ipv onder elkaar, de -block zorgt ervoor dat je de width en hight aankanpassen voor de achtergrond kleurtjes  */
   background: #F8CF70;
   color: white;
   padding: 5px 10px;
@@ -131,6 +119,7 @@ ul.skills {
 .skills li:nth-child(odd) {
   background: pink;
 }
+
 
 footer {
   width: 100%;
@@ -158,35 +147,33 @@ footer ul li {
   display: inline-block;
 }
 
-a.social {
-  display: inline-block;
-  text-indent: -9999px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  opacity: .5;
-  transition: all .25s;
-}
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
-a.github {
-  background-image: url(images/github.svg);
-}
-a.social:hover {
-  opacity: 1;
-}
-.clearfix {
-  clear: both;
-}
-
 ol.list {
   font-style: italic;
   padding: 5px 70px;
 }
+
+
+a.card-link{
+  color:#F8CF70;
+  text-decoration: underline;
+}
+
+a.card-link:hover{
+  color: pink
+}  
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 15px;
+}
+.card:hover {
+  border-color: pink;
+}  
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
@@ -226,6 +213,7 @@ ol.list {
 
   footer {
     font-size: 1.3em;
+    width: 100%;
     max-width: 1200px;
     margin: 40px auto;
   }
@@ -239,11 +227,32 @@ h2 {
   padding: 15px;
 }
 
-a.card-link{
-  color:#F8CF70;
-  text-decoration: underline;
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
 }
 
-a.card-link:hover{
-  color: pink
-}
+
+
+
