@@ -5,11 +5,56 @@ body {
 img.main-image {
     border: solid 4px black;
     border-radius: 50%;
+    margin-top: 100px;
 }
 
-H1{
+.small-image {
+    float: left;  /* a float let's you  wrap an element around an element*/
+    width: 300px;
+    margin: 0 1rem 1rem 0;
+}
+
+figure {
+    position: relative;
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    bottom: 20%;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    margin-left: 25%; /*zorgt ervoor dat het gecentreerd is */
+}
+
+/* z-index  */
+/* gebruiken om elementen over elkaar heen te zetten
+elementen met een hoge z-index staan voor de elementen met een lage z-index */
+.fig-z-index {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    bottom: 10%;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    margin-left: 25%; 
+    z-index: -1;
+}
+
+
+/* fixed position */
+h1{
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: #f7f5f0;
     padding: 5px;
+    height: 5vh;
 }
 
 
@@ -22,4 +67,73 @@ H1{
 #Employment {
     border: 3px solid red;
     border-radius: 8px;
+    position: sticky;
+    top: 0;
 }
+
+.selector1, selector2, selector3 {
+    /* CSS styles for all selectors */
+}
+
+/* when the screen is 720px, what widh will the image be? */
+img { width: 100%; max-width: 600px; height: auto; }
+/* the image will be 600px wide, since that is the max with */
+
+
+/* The display propert is one of CSS's most important propperty for contorling lay-out */
+
+a {
+    background-color: pink;
+    width: 400px; /* dit heeft geen zin omdat bij inline je dus de width niet aan kan passen --> zie uitleg hierboven */
+} 
+
+a.block_display {
+    display: block;
+    background-color: #F8CF70;
+    width: 500px;
+}
+
+.lorem-box {
+    background:pink;
+    padding: 50px;
+    text-align: justify;
+    width: 400px;
+    /* clear: both; --> is used to specify that this element should not be wrapped around (because of the float)*/
+}
+
+
+
+  /* positioning */
+
+    /* static = by default */
+
+    /* relative  = y*/
+
+    /* obsolute = you can change the position in its total */
+
+    /* fixed = same as obsolute, but 2 eceptions: 
+                1. relative to the viewport, not parent  
+                2. stay in place even page is scrolling*/
+
+
+
+
+/* to hide elements from the display,  you can apply this as class in the html code
+this is ussualy used ad paid sites, where you have to pay to read more of the content*/
+.hide {
+    display: none;  /* ca nbe any class name as long as the display is set to none*/
+  }
+  
+  
+  /*  display and it's defaults:
+  <h1>, <p> & <ul> --> by default set on "block" 
+      block element = occupy 100% of the width of the parent container by default and are placed underneath each other (not side by side) 
+  
+      <a> --> by default set on "inline"
+      inline element = wil be at the same line as other content (side by side) , you can not change the width or hight, 
+    
+      inline-block element = is side by side, but you can set the width and height of inline-block elements using CSS
+        see example in Homepage/styles.css
+  
+  
+      */
