@@ -175,6 +175,7 @@ a.card-link:hover{
   border-color: pink;
 }  
 
+/* Media Queries:  */
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -254,5 +255,18 @@ a.social:hover {
 }
 
 
+/* media query: */
+/* Styles for printing */
+@media print {
 
+  section{
+    min-height: auto;
+  }
 
+}
+
+@media screen and (max-width: 500px) {
+  ol.list{
+    padding: 5px 20px;
+  }
+}

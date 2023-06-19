@@ -101,8 +101,23 @@ a.block_display {
     /* clear: both; --> is used to specify that this element should not be wrapped around (because of the float)*/
 }
 
+/* media querry: */
+/* Styles for printing */
+@media print {
+    section{
+      min-height: auto;
+    }
+    h1 {                 /* remmoves the "Resume" banner when printing */
+        display: none;
+    }
+  }
 
 
+@media screen and (orientation: landscape){
+    .lorem-box {
+        background:#CEDFD9;
+    }
+}
   /* positioning */
 
     /* static = by default */
