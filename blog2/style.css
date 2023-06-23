@@ -1,0 +1,46 @@
+/* Web Fonts ----------------------- */
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('../blog2/fonts/abolition-regular-webfont.woff')
+}
+
+
+/* Base Styles --------------------- */
+* {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 1.25em; /* 20px on most screens */  
+  }
+  body {
+    font-family: 'Ysabeau Office', sans-serif;
+    color: #454959;
+    font-weight: 300;
+    line-height: 1.5; /*the space between lines, by default 1.2 */
+  }
+  h1, h2 {
+    font-family: 'Abolition Regular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3{
+    font-size: 1.25rem;
+  }
+  img {
+    width: 100%; /* responsive images */
+  }
+  
+  
+  /* Main Styles --------------------- */
+  
+  
+  /* Media Queries ------------------- */
+  
+  
